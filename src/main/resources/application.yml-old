@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:db
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: 
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+flyway:
+  validate-on-migrate: false
+  
+server:
+  port: 9090

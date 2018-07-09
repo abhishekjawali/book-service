@@ -1,6 +1,7 @@
 package com.abhi.spring.tdd.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -25,7 +26,7 @@ public class BookController {
 	public Book getBook(@PathVariable Long bookId) {
 		return bookService.getBook(bookId);
 	}
-	
+
 	@PostMapping(value = "/book")
 	public Book addBook(@RequestBody Book book) {
 		return bookService.createBook(book);
