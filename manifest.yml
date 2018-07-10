@@ -6,4 +6,4 @@ applications:
   path: target/book-service-0.0.1-SNAPSHOT.jar
   services:  - mysql-book
   env:
-    SPRING_PROFILES_ACTIVE: dev
+    SPRING_PROFILES_ACTIVE: dev, cloud
